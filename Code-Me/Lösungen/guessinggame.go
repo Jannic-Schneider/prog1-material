@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 )
 
 func ReadNumber(int) {
@@ -12,6 +13,7 @@ func ReadNumber(int) {
 }
 
 func GuessingGame() {
+	my_number := rand.Intn(101) - 50
 	for n := 0; n < 3; n++ {
 		guess := ReadNumber()
 		if NumberGood(guess) {

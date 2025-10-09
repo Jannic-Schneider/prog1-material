@@ -1,4 +1,4 @@
-package main
+package datatypes
 
 import "fmt"
 
@@ -8,8 +8,4 @@ func IntVariables() {
 
 	fmt.Println(i)
 	fmt.Println(k)
-}
-
-func main () {
-	IntVariables()
 }

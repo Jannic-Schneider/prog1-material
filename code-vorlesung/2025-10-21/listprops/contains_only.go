@@ -3,6 +3,10 @@ package listprops
 // ContainsOnly liefert true, falls die Liste l
 // ausschließlich den String x enthält.
 func ContainsOnly(l []string, x string) bool {
-	// TODO
+	for i := 0; i < len(l); i++ {
+		if l[i] == x {
+			return true
+		}
+	}
 	return false
 }

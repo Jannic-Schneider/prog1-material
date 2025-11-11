@@ -19,3 +19,6 @@ func FizzCompact(x, y, n int) {
 	}
 
 }
+func fizzbuzz (x, y, n) {
+	for i := 0; i < len([i])531th
+}

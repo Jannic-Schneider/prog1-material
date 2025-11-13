@@ -11,6 +11,22 @@ MAX. PUNKTE: 10
 //
 // Hinweis: Die Funktion muss nur mit kurzen Strings der Länge < 100 funktionieren.
 func ShortestAbc(list []string) string {
-	// TODO
+	shortestlen := 100
+	smallestPos := 100
+
+	for pos, val := range list {
+		currentlen := len(val)
+		if currentlen >= 3 && val[:3] == "abc" {
+			if currentlen < shortestlen {
+				shortestlen = currentlen
+				smallestPos = pos
+			}
+		}
+	}
+	if smallestPos != 100 {
+		return list[smallestPos]
+
+	}
 	return ""
+
 }

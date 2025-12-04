@@ -9,6 +9,18 @@ package aufgabe2
 // Alle anderen Zeichen sollen unverändert bleiben.
 func FilterDigits(s string) string {
 	result := ""
-	// TODO
+	digits := "0123456789"
+	for _, el := range s {
+		a := true
+		for _, za := range digits {
+			if el == za {
+				a = false
+			}
+		}
+
+		if a {
+			result += string(el)
+		}
+	}
 	return result
 }
